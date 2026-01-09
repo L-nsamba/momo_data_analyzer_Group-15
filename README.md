@@ -37,12 +37,20 @@ The project structure is as follows;
 └── requirements.txt # Lists of the python dependencies
 
 
-🚀 GETTING STARTED
+🚀 GETTING STARTED FOR THE PROOJECT
 
-Prerequisites
+1. Clone the repo: git clone [URL]
+2. Install dependencies: pip install -r requirements.txt
+3. Run ETL: Execute ./scripts/run_etl.sh to process the momo.xml data.
 
-* Python 3.8+
-* GitHub account for collaboration
+📜📑 SCRUM BOARD SETUP
+
+ Our team follows a simple but effective format containing:
+
+ * To Do: Repo setup, architecture diagram, research
+ * In Progress: ETL logic development
+ * Done: Initial project organization
+
 
 
 
