@@ -37,7 +37,7 @@ The project structure is as follows;
 └── requirements.txt # Lists of the python dependencies
 
 
-🚀 GETTING STARTED FOR THE PROOJECT
+🚀 GETTING STARTED FOR THE PROJECT
 
 1. Clone the repo: git clone [URL]
 2. Install dependencies: pip install -r requirements.txt
@@ -50,6 +50,7 @@ The project structure is as follows;
  * To Do: Repo setup, architecture diagram, research
  * In Progress: ETL logic development
  * Done: Initial project organization
+
 
 
 
