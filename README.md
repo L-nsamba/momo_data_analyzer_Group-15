@@ -22,23 +22,20 @@ MEMBERS
 
 The project structure is as follows;
 
-|___ README.md
-|
-|___ .env.example
-|
-|___ requirements.txt
-|
-|___ index.html
-|
-|___ web/
-|
-|    |__ style.css
-|    | 
-|    |__ chart_handler.js
-|    |
-|    |__ assets/
-|___ data/
-|    |___ raw/
+├── analytics/  # Contains logic for analyzing processed data
+├── api/ # Handles communication between the backend and frontend
+├── data/ # stores all application data 
+├── etl/ # Contains the ETL pipeline 
+├── scripts/ # Utility and helper scripts
+├── tests/ # Contains automated tests
+├── web/ 
+│   ├── chart_handler.js # Fetches data from API
+│   └── styles.css # Controls the visual appearence 
+├── .env.example # Shows required environment variables
+├── README.md # Description of the project
+├── index.html # Main entry point for the UI
+└── requirements.txt # Lists of the python dependencies
+
 
 🚀 GETTING STARTED
 
@@ -46,6 +43,7 @@ Prerequisites
 
 * Python 3.8+
 * GitHub account for collaboration
+
 
 
 
