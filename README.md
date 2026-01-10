@@ -11,7 +11,7 @@ The system extracts data from XML SMS, categorizes transactions (e.g sent, recie
 2. Mitchell Barure
 3. Mufaro Kunze
 4. Uwera Ruth Queen
-5. Micheal
+5. Michael Okinyi Odhiambo
 
 ### 🛠 PROJECT PLAN & ARCHITECTURE
 
@@ -57,6 +57,7 @@ The project structure is as follows;
  * Done: Initial project organization
 
 **Link to Scrum Board**: 
+
 
 
 
