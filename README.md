@@ -6,7 +6,7 @@ This project is an enterprise-level full-stack application designed to process, 
 The system extracts data from XML SMS, categorizes transactions (e.g sent, recieved, payments) using a Pyhton-based ETL (Extract, Transform, Load) pipeline, stores them in a relational MYSQL database and presents insights via a web-based front-end display.
 <br>
 
-### 👥 GROUP 15 TEAM INFORMATION
+### 👥 GROUP 15 TEAM MEMBERS
 1. Leon Nsamba
 2. Mitchell Barure
 3. Mufaro Kunze
@@ -55,6 +55,7 @@ The project structure is as follows;
  * Done: Initial project organization
 
 **Link to Scrum Board**: 
+
 
 
 
