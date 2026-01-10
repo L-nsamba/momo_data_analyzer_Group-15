@@ -16,8 +16,6 @@ The system extracts data from XML SMS, categorizes transactions (e.g sent, recie
 ### 🛠 PROJECT PLAN & ARCHITECTURE
 
 * System Architecture Diagram:
-* Task Distribution and Progress Tracking
-
 **Link to System Architecture**: https://drive.google.com/file/d/11VwjXPzEtyVcKTR5qhzlJlR3nYDVkgLP/view?usp=sharing
 
 
@@ -57,6 +55,7 @@ The project structure is as follows;
  * Done: Initial project organization
 
 **Link to Scrum Board**: 
+
 
 
 
