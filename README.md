@@ -53,7 +53,8 @@ The project structure is as follows;
  * In Progress: ETL logic development
  * Done: Initial project organization
 
-**Link to Scrum Board**: 
+**Link to Scrum Board**: https://trello.com/b/5OkdDdek/momo-sms-analyser-scrum-board
+
 
 
 
