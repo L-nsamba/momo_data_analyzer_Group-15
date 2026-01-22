@@ -3,9 +3,9 @@ CREATE TABLE Users (
     User_id INT AUTO_INCREMENT PRIMARY KEY,
     Full_name VARCHAR(100) NOT NULL,
     Phone_Number VARCHAR(15) UNIQUE,
-    Account_Number VARCHAR(20) NULL,
-    User_Type ENUM ('Customer', 'Agent', 'Merchant'),
-    Keywords TEXT NOT NULL
+    Account_Number VARCHAR(20) NULL, #NULL ensures that the table still operates even if a user does not have an Account_number
+    User_Type ENUM ('Customer', 'Agent', 'Merchant'), 
+    Keywords TEXT NOT NULL #Search Indexing to ensure user can find data faster
 );
 
 #Example of some DML Statements to insert data into the table
