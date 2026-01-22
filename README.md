@@ -3,7 +3,7 @@
 ### 📋 PROJECT OVERVIEW
 
 This project is an enterprise-level full-stack application designed to process, clean and visualize Mobile Money (M0MO) transaction data. 
-The system extracts data from XML SMS, categorizes transactions (e.g sent, recieved, payments) using a Pyhton-based ETL (Extract, Transform, Load) pipeline, stores them in a relational MYSQL database and presents insights via a web-based front-end display.
+The system extracts data from XML SMS, categorizes transactions (e.g sent, received, payments) using a Python-based ETL (Extract, Transform, Load) pipeline, stores them in a relational MYSQL database and presents insights via a web-based front-end display.
 <br>
 
 ### 👥 GROUP 15 TEAM MEMBERS
@@ -13,9 +13,13 @@ The system extracts data from XML SMS, categorizes transactions (e.g sent, recie
 4. Uwera Ruth Queen
 5. Michael Okinyi Odhiambo
 
-### 🛠 PROJECT PLAN & ARCHITECTURE
+### 🛠 PROJECT PLAN, ERD & ARCHITECTURE
 
 **Link to System Architecture**: https://drive.google.com/file/d/11VwjXPzEtyVcKTR5qhzlJlR3nYDVkgLP/view?usp=sharing
+<br>
+**Link to Entity Relationship Diagram (ERD)**: https://drive.google.com/file/d/1E8zs6vlPjvkJVyE-KlzCFYkeHmhW4Ba_/view?usp=sharing
+<br>
+**Link to Design Decision Documentation**: https://docs.google.com/document/d/1L_9i8k3eY0Be9_FVFDM8Ej2VtT09MRbBnJ2p_HC2gcQ/edit?usp=sharing
 
 
 ### 📂 PROJECT STRUCTURE
@@ -30,12 +34,12 @@ The project structure is as follows;
 ├── tests/              # Contains automated tests
 ├── web/
 │   ├── chart_handler.js   # Fetches data from API
-│   └── styles.css         # Controls the visual appearence
+│   └── styles.css         # Controls the visual appearance
 │
 ├── .env.example        # Shows required environment variables
 ├── README.md           # Description of the project
 ├── index.html          # Main entry point for the UI
-└── requirements.txt    # Lists of the python dependencies
+└── requirements.txt    # List of the python dependencies
 ```
 
 
@@ -53,7 +57,8 @@ The project structure is as follows;
  * In Progress: ETL logic development
  * Done: Initial project organization
 
-**Link to Scrum Board** : https://trello.com/b/5OkdDdek/momo-sms-analyser-scrum-board
+**Link to Scrum Board**: https://trello.com/b/5OkdDdek/momo-sms-analyser-scrum-board
+
 
 
 
