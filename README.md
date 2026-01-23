@@ -26,10 +26,14 @@ The system extracts data from XML SMS, categorizes transactions (e.g sent, recei
 
 The project structure is as follows;
 ```plaintext
+├──.idea/              # IDE configuration files
 ├── analytics/          # Contains logic for analyzing processed data
 ├── api/                # Handles communication between the backend and frontend
-├── data/               # stores all application data 
-├── etl/                # Contains the ETL pipeline 
+├── database/            # Database schemas, migrations and connection logic
+├── docs/               # Project documentation (ERD diagrams, notes)
+├── dsa/                # Data structures & algorithms used for parsing and processing
+├── etl/                # Contains the ETL pipeline
+├── examples/           # Sample inputs and example outputs
 ├── scripts/            # Utility and helper scripts
 ├── tests/              # Contains automated tests
 ├── web/
@@ -42,7 +46,24 @@ The project structure is as follows;
 └── requirements.txt    # List of the python dependencies
 ```
 
+### ⚙ SYSTEM WORKFLOW
 
+1. Data Extraction
+   * XML SMS files containing Momo transactions are read and parsed
+     
+2. Data Transformation
+   * Messages are cleaned, categorized and normalized
+   * Transaction types such as sent, received, payments, and withdrawals are identified.
+     
+3. Data Loading
+   * Cleaned data is stored in MYSQL database following the ERD design
+     
+4. API layer
+   *Processed data is exposed via RESTful endpoints.
+   
+6. Visualization
+   * The web interface fetches data from the API and displays insights using charts.
+     
 ### 🚀 GETTING STARTED FOR THE PROJECT
 
 1. Clone the repo: ``` git clone https://github.com/L-nsamba/momo_data_analyzer_Group-15.git ```
@@ -58,6 +79,7 @@ The project structure is as follows;
  * Done: Initial project organization
 
 **Link to Scrum Board**: https://trello.com/b/5OkdDdek/momo-sms-analyser-scrum-board
+
 
 
 
