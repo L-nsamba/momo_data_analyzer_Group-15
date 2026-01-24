@@ -10,7 +10,7 @@ sms_records = []
 for sms in root.findall("sms"):
     record = {
         "address": sms.get("address"),
-        "date": sms.get("date"),
+        "date": sms.get("readable_date"),
         "body": sms.get("body")
     }
     sms_records.append(record)
