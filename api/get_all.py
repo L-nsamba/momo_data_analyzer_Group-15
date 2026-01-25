@@ -1,5 +1,6 @@
 import json
 from flask import Flask, jsonify
+from auth import require_auth
 
 app = Flask(__name__)
 
@@ -9,6 +10,7 @@ with open("dsa/logs/sms_records.json") as f:
 
 #Accessing the file path in which the json file is stored and executing GET
 @app.route('/sms_records', methods=['GET'])
+@require_auth
 def get_records():
     return jsonify(sms_records)
 
