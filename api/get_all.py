@@ -1,15 +1,18 @@
 import json
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-with open("sms_records.json") as f:
+
+with open("dsa/logs/sms_records.json") as f:
     sms_records = json.load(f)
 
-#To get items
+#Accessing the file path in which the json file is stored and executing GET
 @app.route('/sms_records', methods=['GET'])
 def get_records():
     return jsonify(sms_records)
+
+print(f"Link to JSON: http://127.0.0.1:5000/sms_records ")
 
 if __name__ == '__main__':
     app.run(debug=True)
