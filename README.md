@@ -93,12 +93,7 @@ The project structure is as follows;
 <li> Normalization to avoid data duplication </li>
 
 ### 📜📑 SCRUM BOARD SETUP
-
-Our team follows a simple but effective format containing:
  
-<li> To Do: Repo setup, architecture diagram, research </li>
-<li> In Progress: ETL logic development </li>
-<li> Done: Initial project organization </li>
 
 **Link to Scrum Board**: https://trello.com/b/5OkdDdek/momo-sms-analyser-scrum-board
 
