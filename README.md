@@ -43,7 +43,7 @@ The project structure is as follows;
 ├── .env.example        # Shows required environment variables
 ├── README.md           # Description of the project
 ├── index.html          # Main entry point for the UI
-└── requirements.txt    # List of the python dependencies
+└── requirements.txt    # List of the Python dependencies
 ```
 
 ### ⚙ SYSTEM WORKFLOW
@@ -59,7 +59,7 @@ The project structure is as follows;
    * Cleaned data is stored in MYSQL database following the ERD design
      
 4. API layer
-   *Processed data is exposed via RESTful endpoints.
+   * Processed data is exposed via RESTful endpoints.
    
 6. Visualization
    * The web interface fetches data from the API and displays insights using charts.
@@ -79,6 +79,7 @@ The project structure is as follows;
  * Done: Initial project organization
 
 **Link to Scrum Board**: https://trello.com/b/5OkdDdek/momo-sms-analyser-scrum-board
+
 
 
 
