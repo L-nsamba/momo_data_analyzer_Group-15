@@ -51,12 +51,6 @@ The project structure is as follows;
 
 ### 📜📑 SCRUM BOARD SETUP
 
- Our team follows a simple but effective format containing:
- 
- * To Do: Repo setup, architecture diagram, research
- * In Progress: ETL logic development
- * Done: Initial project organization
-
 **Link to Scrum Board**: https://trello.com/b/5OkdDdek/momo-sms-analyser-scrum-board
 
 
