@@ -1,0 +1,42 @@
+[
+    {
+        "User_id": 1,
+        "Full_name": "MitchellBarure",
+        "Phone_Number": 794467731,
+        "Account_Number": 9568899732,
+        "User_Type": "Customer",
+        "Keywords": "1 MitchellBarure, 0794467731, 9568899732, Customer"
+    },
+    {
+        "User_id": 2,
+        "Full_name": "JohnMichael",
+        "Phone_Number": 893349976,
+        "Account_Number": 235179334,
+        "User_Type": "Agent",
+        "Keywords": "2, JohnMichael, 0893347796, Agent"
+    },
+    {
+        "User_id": 3,
+        "Full_name": "GustavoFrank",
+        "Phone_Number": 777967578,
+        "Account_Number": 909090909,
+        "User_Type": "Customer",
+        "Keywords": "3, GustavoFrank, 777967578, 909090909, Customer"
+    },
+    {
+        "User_id": 4,
+        "Full_name": "LeonNsamba",
+        "Phone_Number": 779495055,
+        "Account_Number": 12345678,
+        "User_Type": "Agent",
+        "Keywords": "4, LeonNsamba, 779495055, Agent"
+    },
+    {
+        "User_id": 5,
+        "Full_name": "DarrenGlover",
+        "Phone_Number": 771435066,
+        "Account_Number": 8769089087,
+        "User_Type": "Customer",
+        "Keywords": "5, DarrenGlover, 771435066, 8769089087, Customer"
+    }
+]
