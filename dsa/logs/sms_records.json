@@ -8458,5 +8458,10 @@
         "id": 4,
         "sender": "Leon",
         "message": "Testing auth"
+    },
+    {
+        "id": 4,
+        "sender": "Mitchell",
+        "message": "Second authentication test"
     }
 ]
