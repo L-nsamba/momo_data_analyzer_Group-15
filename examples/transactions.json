@@ -1,0 +1,67 @@
+[
+    {
+        "transaction_id": 1,
+        "sender_id": 4,
+        "receiver_id": 5,
+        "category_id": 1,
+        "amount": 200000,
+        "transaction_fee": 1000,
+        "balance_after": 250000,
+        "transaction_type": "Credit",
+        "status": "SUCCESS",
+        "transaction_references": "TX001",
+        "created_at": "2026-01-23 18:56:00"
+    },
+    {
+        "transaction_id": 3,
+        "sender_id": 2,
+        "receiver_id": 3,
+        "category_id": 3,
+        "amount": 17500,
+        "transaction_fee": 1000,
+        "balance_after": 51000,
+        "transaction_type": "Debit",
+        "status": "SUCCESS",
+        "transaction_references": "TX002",
+        "created_at": "2026-01-23 19:04:00"
+    },
+    {
+        "transaction_id": 4,
+        "sender_id": 2,
+        "receiver_id": 1,
+        "category_id": 4,
+        "amount": 37000,
+        "transaction_fee": 1000,
+        "balance_after": 76200,
+        "transaction_type": "Credit",
+        "status": "SUCCESS",
+        "transaction_references": "TX003",
+        "created_at": "2026-01-23 19:08:00"
+    },
+    {
+        "transaction_id": 5,
+        "sender_id": 4,
+        "receiver_id": 2,
+        "category_id": 5,
+        "amount": 9900,
+        "transaction_fee": 1000,
+        "balance_after": 12700,
+        "transaction_type": "Debit",
+        "status": "SUCCESS",
+        "transaction_references": "TX004",
+        "created_at": "2026-01-23 19:09:00"
+    },
+    {
+        "transaction_id": 6,
+        "sender_id": 2,
+        "receiver_id": 3,
+        "category_id": 6,
+        "amount": 122000,
+        "transaction_fee": 1000,
+        "balance_after": 150500,
+        "transaction_type": "Credit",
+        "status": "SUCCESS",
+        "transaction_references": "TX005",
+        "created_at": "2026-01-23 19:10:00"
+    }
+]

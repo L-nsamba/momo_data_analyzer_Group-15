@@ -1,0 +1,37 @@
+[
+    {
+        "category_id": 1,
+        "category_name": "Salary",
+        "category_type": "Income",
+        "sub_category": "Monthly Salary",
+        "keywords": "Salary, Income, Monthly Credit"
+    },
+    {
+        "category_id": 3,
+        "category_name": "Transport",
+        "category_type": "Expense",
+        "sub_category": "Public Transport",
+        "keywords": "Transport, Bus, Taxi, Car"
+    },
+    {
+        "category_id": 4,
+        "category_name": "Groceries",
+        "category_type": "Expense",
+        "sub_category": "Food",
+        "keywords": "SuperMarket, Expense, Food"
+    },
+    {
+        "category_id": 5,
+        "category_name": "Transport",
+        "category_type": "Expense",
+        "sub_category": "Public Transport",
+        "keywords": "Bus, Taxi, Car, Expense"
+    },
+    {
+        "category_id": 6,
+        "category_name": "Utilities",
+        "category_type": "Expense",
+        "sub_category": "Monthly Bills",
+        "keywords": "Water, Gas, Electricity, Expense"
+    }
+]
