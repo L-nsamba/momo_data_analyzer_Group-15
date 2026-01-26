@@ -21,6 +21,9 @@ The system extracts data from XML SMS, categorizes transactions (e.g sent, recei
 **Link to Design Decision Documentation**: https://docs.google.com/document/d/1L_9i8k3eY0Be9_FVFDM8Ej2VtT09MRbBnJ2p_HC2gcQ/edit?usp=sharing
 <br>
 
+**Link to EWD AI Log Documentation**: https://docs.google.com/document/d/1pGzeU6sfVQJjUu1Yf0Ksqrh-R3pc5Tpnkw56t4HX5KU/edit?usp=sharing
+<br>
+
 ### 🚀 GETTING STARTED FOR THE PROJECT
 
 1. Clone the repo: ``` git clone https://github.com/L-nsamba/momo_data_analyzer_Group-15.git ```
@@ -96,6 +99,7 @@ The project structure is as follows;
  
 
 **Link to Scrum Board**: https://trello.com/b/5OkdDdek/momo-sms-analyser-scrum-board
+
 
 
 
