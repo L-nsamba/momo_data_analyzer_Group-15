@@ -1,6 +1,6 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
-from auth.auth import is_authenticated # import existing auth
+from auth import require_auth # import existing auth
 
 DATA_PATH = "dsa/logs/sms_records.json"
 
@@ -12,7 +12,7 @@ def load_transactions():
 class RequestHandler(BaseHTTPRequestHandler):
 
     def do_GET(self):
-        if not is_authenticated(self.headers):
+        if not require_auth(self.headers):
             self.send_response(401)
             self.end_headers()
             return
