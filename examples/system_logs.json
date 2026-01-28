@@ -38,5 +38,21 @@
         "error": "NULL",
         "created_at": "2026-01-23 18:41:58",
         "processing_at": "NULL"
+    },
+    {
+        "log_id": 6,
+        "raw_message": "<transaction><amount>5000.00</amount><user>6</user></transaction",
+        "processing_status": "pending",
+        "error": "NULL",
+        "created_at": "2026-01-25 10:10:00",
+        "processing_at": "NULL"
+    },
+    {
+        "log_id": 7,
+        "raw_message": "<transaction><amount>9500.00</amount><user>6</user></transaction",
+        "processing_status": "pending",
+        "error": "NULL",
+        "created_at": "2026-01-25 10:15:00",
+        "processing_at": "NULL"
     }
 ]
