@@ -18,7 +18,7 @@ The system extracts data from XML SMS, categorizes transactions (e.g sent, recei
 **Link to System Architecture**: https://drive.google.com/file/d/11VwjXPzEtyVcKTR5qhzlJlR3nYDVkgLP/view?usp=sharing
 <br>
 
-**Link to Design Decision Documentation**: https://docs.google.com/document/d/1L_9i8k3eY0Be9_FVFDM8Ej2VtT09MRbBnJ2p_HC2gcQ/edit?usp=sharing
+**Link to Database Design Documentation**: https://docs.google.com/document/d/1L_9i8k3eY0Be9_FVFDM8Ej2VtT09MRbBnJ2p_HC2gcQ/edit?usp=sharing
 <br>
 
 **Link to EWD AI Log Documentation**: https://docs.google.com/document/d/1pGzeU6sfVQJjUu1Yf0Ksqrh-R3pc5Tpnkw56t4HX5KU/edit?usp=sharing
@@ -34,16 +34,17 @@ The system extracts data from XML SMS, categorizes transactions (e.g sent, recei
 
 The project structure is as follows;
 ```plaintext
-├──.idea/              # IDE configuration files
-├── analytics/          # Contains logic for analyzing processed data
-├── api/                # Handles communication between the backend and frontend
+├──.idea/                
+├── analytics/           # Contains logic for analyzing processed data
+├── api/                 # Handles communication between the backend and frontend
+├── data/                # Contains XML --> JSON
 ├── database/            # Database schemas, migrations and connection logic
-├── docs/               # Project documentation (ERD diagrams, notes)
-├── dsa/                # Data structures & algorithms used for parsing and processing
-├── etl/                # Contains the ETL pipeline
-├── examples/           # Sample inputs and example outputs
-├── scripts/            # Utility and helper scripts
-├── tests/              # Contains automated tests
+├── docs/                # Project documentation (ERD diagrams, notes)
+├── dsa/                 # Linear & Binary Search Logic
+├── etl/                 # Contains the ETL pipeline
+├── examples/            # Sample JSON
+├── scripts/             # Utility and helper scripts
+├── tests/               # Contains automated tests
 ├── web/
 │   ├── chart_handler.js   # Fetches data from API
 │   └── styles.css         # Controls the visual appearance
@@ -94,11 +95,13 @@ The project structure is as follows;
 <li> Composite primary key in user_category to prevent duplicate mappings. </li>
 <li> Timestamp fields (created_at, processed_at)</li>
 <li> Normalization to avoid data duplication </li>
+<li>JSON Data Modelling</li>
 
 ### 📜📑 SCRUM BOARD SETUP
  
 
 **Link to Scrum Board**: https://trello.com/b/5OkdDdek/momo-sms-analyser-scrum-board
+
 
 
 
