@@ -26,9 +26,9 @@ CREATE TABLE `Users` (
   `User_id` int NOT NULL AUTO_INCREMENT,
   `Full_name` varchar(100) NOT NULL,
   `Phone_Number` varchar(15) DEFAULT NULL,
-  `Account_Number` varchar(20) DEFAULT NULL,
+  `Account_Number` varchar(20) DEFAULT NULL, /*NULL ensures that the table still operates even if a user does not have an Account_number*/
   `User_Type` enum('Customer','Agent','Merchant') DEFAULT NULL,
-  `Keywords` text NOT NULL,
+  `Keywords` text NOT NULL, /*Search Indexing to ensure user can find data faster*/
   PRIMARY KEY (`User_id`),
   UNIQUE KEY `Phone_Number` (`Phone_Number`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -53,9 +53,9 @@ DROP TABLE IF EXISTS `system_logs`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `system_logs` (
   `log_id` int NOT NULL AUTO_INCREMENT,
-  `raw_message` text NOT NULL,
-  `processing_status` enum('pending','success','failed') DEFAULT 'pending',
-  `error` text,
+  `raw_message` text NOT NULL, /*Stores the full XML string */
+  `processing_status` enum('pending','success','failed') DEFAULT 'pending', /*Track the lifecycle of the data*/
+  `error` text, /*Field to store error details if status is 'failed'*/
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `processed_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`log_id`)
