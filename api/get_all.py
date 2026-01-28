@@ -5,7 +5,7 @@ from auth import require_auth
 app = Flask(__name__)
 
 
-with open("dsa/logs/sms_records.json") as f:
+with open("data/logs/sms_records.json") as f:
     sms_records = json.load(f)
 
 #Accessing the file path in which the json file is stored and executing GET
