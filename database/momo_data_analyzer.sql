@@ -107,17 +107,38 @@ DROP TABLE IF EXISTS `transactions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `transactions` (
-  `transaction_id` int NOT NULL AUTO_INCREMENT,
-  `sender_id` int NOT NULL,
-  `receiver_id` int NOT NULL,
-  `category_id` int NOT NULL,
-  `amount` decimal(12,2) NOT NULL,
-  `transaction_fee` decimal(12,2) DEFAULT '0.00',
-  `balance_after` decimal(12,2) NOT NULL,
-  `transaction_type` varchar(50) DEFAULT NULL,
-  `status` varchar(20) DEFAULT 'SUCCESS',
-  `transaction_references` varchar(100) DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `transaction_id` int NOT NULL AUTO_INCREMENT
+    COMMENT 'Primary key uniquely identifying each transaction',
+
+  `sender_id` int NOT NULL
+    COMMENT 'User ID of the sender initiating the transaction',
+
+  `receiver_id` int NOT NULL
+    COMMENT 'User ID of the receiver of the transaction',
+
+  `category_id` int NOT NULL
+    COMMENT 'Category identifier describing the transaction type',
+
+  `amount` decimal(12,2) NOT NULL
+    COMMENT 'Transaction amount excluding transaction fees',
+
+  `transaction_fee` decimal(12,2) DEFAULT '0.00'
+    COMMENT 'Fee charged for processing the transaction',
+
+  `balance_after` decimal(12,2) NOT NULL
+    COMMENT 'Sender account balance after the transaction is completed',
+
+  `transaction_type` varchar(50) DEFAULT NULL
+    COMMENT 'Logical type of transaction such as SEND, RECEIVE, PAYMENT',
+
+  `status` varchar(20) DEFAULT 'SUCCESS'
+    COMMENT 'Transaction processing status (SUCCESS, FAILED, PENDING)',
+
+  `transaction_references` varchar(100) DEFAULT NULL
+    COMMENT 'Unique external or system-generated transaction reference',
+
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+    COMMENT 'Timestamp indicating when the transaction was created',
   PRIMARY KEY (`transaction_id`),
   UNIQUE KEY `transaction_references` (`transaction_references`),
   KEY `sender_id` (`sender_id`),
