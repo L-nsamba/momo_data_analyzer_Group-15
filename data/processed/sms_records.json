@@ -8455,18 +8455,103 @@
         "body": "TxId: 37832903831. Your payment of 24,900 RWF to Robert Brown 23478 has been completed at 2025-01-16 00:13:22. Your new balance: 4,900 RWF. Fee was 0 RWF."
     },
     {
-        "id": 4,
+        "id": 1,
         "sender": "Leon",
         "message": "Testing auth"
     },
     {
-        "id": 4,
-        "sender": "Mitchell",
-        "message": "Second authentication test"
+        "id": 2,
+        "sender": "Mufaro",
+        "message": "Mufaro's test"
     },
     {
-        "id": "4",
-        "sender": "Leon2",
-        "message": "second test with post"
+        "id": 3,
+        "sender": "Mitchell",
+        "message": "Mitchell's test"
+    },
+    {
+        "id": 4,
+        "sender": "Michael",
+        "message": "Michael Testing auth"
+    },
+    {
+        "id": 5,
+        "sender": "Suzan",
+        "message": "Trial"
+    },
+    {
+        "id": 6,
+        "sender": "Elizabeth",
+        "message": "Learning EWD is fun"
+    },
+    {
+        "id": 7,
+        "sender": "Jane",
+        "message": "MTN > Airtel"
+    },
+    {
+        "id": 8,
+        "sender": "Alice",
+        "message": "Alice in Wonderland"
+    },
+    {
+        "id": 9,
+        "sender": "Claudia",
+        "message": "German popstar"
+    },
+    {
+        "id": 10,
+        "sender": "Sanjay",
+        "message": "Sanjay & Craig"
+    },
+    {
+        "id": 11,
+        "sender": "Zendaya",
+        "message": "Check 123"
+    },
+    {
+        "id": 12,
+        "sender": "Jospehine",
+        "message": "MOMO is easy to use"
+    },
+    {
+        "id": 13,
+        "sender": "Ricardo",
+        "message": "Arsenal's best left back"
+    },
+    {
+        "id": 14,
+        "sender": "Araphat",
+        "message": "Future Ugandan doctor"
+    },
+    {
+        "id": 15,
+        "sender": "Misaki",
+        "message": "Payment of 100k processed"
+    },
+    {
+        "id": 16,
+        "sender": "Masphine",
+        "message": "Testing momo json"
+    },
+    {
+        "id": 17,
+        "sender": "Zinjathropos",
+        "message": "Oldest skull found in EA"
+    },
+    {
+        "id": 18,
+        "sender": "Terrance",
+        "message": "Luxury spot"
+    },
+    {
+        "id": 19,
+        "sender": "Juno",
+        "message": "Popular pop song"
+    },
+    {
+        "id": 20,
+        "sender": "Lee",
+        "message": "Lee as in Brue Lee"
     }
 ]
