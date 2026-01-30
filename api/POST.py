@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 
 # Find the JSON file relative to this script
-DATA_FILE = os.path.join(os.path.dirname(__file__), '..', 'data', 'logs', 'sms_records.json')
+DATA_FILE = os.path.join(os.path.dirname(__file__), '..', 'data', 'processed', 'sms_records.json')
 
 # Make sure the folder exists
 os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
