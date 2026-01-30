@@ -8457,101 +8457,101 @@
     {
         "id": 1,
         "sender": "Leon",
-        "message": "Testing auth"
+        "message": "Transaction amount: 18500 RWF"
     },
     {
         "id": 2,
         "sender": "Mufaro",
-        "message": "Mufaro's test"
+        "message": "Transaction amount: 19000 RWF"
     },
     {
         "id": 3,
         "sender": "Mitchell",
-        "message": "Mitchell's test"
+        "message": "Transaction amount: 17000 RWF"
     },
     {
         "id": 4,
         "sender": "Michael",
-        "message": "Michael Testing auth"
+        "message": "Transaction amount: 10200 RWF"
     },
     {
         "id": 5,
         "sender": "Suzan",
-        "message": "Trial"
+        "message": "Transaction amount: 5200 RWF"
     },
     {
         "id": 6,
         "sender": "Elizabeth",
-        "message": "Learning EWD is fun"
+        "message": "Transaction amount: 5000 RWF"
     },
     {
         "id": 7,
         "sender": "Jane",
-        "message": "MTN > Airtel"
+        "message": "Transaction amount: 8900 RWF"
     },
     {
         "id": 8,
         "sender": "Alice",
-        "message": "Alice in Wonderland"
+        "message": "Transaction amount: 800 RWF"
     },
     {
         "id": 9,
         "sender": "Claudia",
-        "message": "German popstar"
+        "message": "Transaction amount: 1000 RWF"
     },
     {
         "id": 10,
         "sender": "Sanjay",
-        "message": "Sanjay & Craig"
+        "message": "Transaction amount: 1200 RWF"
     },
     {
         "id": 11,
         "sender": "Zendaya",
-        "message": "Check 123"
+        "message": "Transaction amount: 8940 RWF"
     },
     {
         "id": 12,
         "sender": "Jospehine",
-        "message": "MOMO is easy to use"
+        "message": "Transaction amount: 13500 RWF"
     },
     {
         "id": 13,
         "sender": "Ricardo",
-        "message": "Arsenal's best left back"
+        "message": "Transaction amount: 9900 RWF"
     },
     {
         "id": 14,
         "sender": "Araphat",
-        "message": "Future Ugandan doctor"
+        "message": "Transaction amount: 4000 RWF"
     },
     {
         "id": 15,
         "sender": "Misaki",
-        "message": "Payment of 100k processed"
+        "message": "Transaction amount: 750 RWF"
     },
     {
         "id": 16,
         "sender": "Masphine",
-        "message": "Testing momo json"
+        "message": "Transaction amount: 20120 RWF"
     },
     {
         "id": 17,
         "sender": "Zinjathropos",
-        "message": "Oldest skull found in EA"
+        "message": "Transaction amount: 12000 RWF"
     },
     {
         "id": 18,
         "sender": "Terrance",
-        "message": "Luxury spot"
+        "message": "Transaction amount: 9700 RWF"
     },
     {
         "id": 19,
         "sender": "Juno",
-        "message": "Popular pop song"
+        "message": "Transaction amount: 43200 RWF"
     },
     {
         "id": 20,
         "sender": "Lee",
-        "message": "Lee as in Brue Lee"
+        "message": "Transaction amount: 12000 RWF"
     }
 ]
