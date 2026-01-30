@@ -24,7 +24,7 @@ def save_records(records):
     with open(DATA_FILE, 'w') as f:
         json.dump(records, f, indent=4)
 
-@app.route('/transactions', methods=['POST'])
+@app.route('/sms_records', methods=['POST'])
 @require_auth
 def add_transaction():
     # Get the data from the request

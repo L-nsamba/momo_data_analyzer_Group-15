@@ -8454,7 +8454,7 @@
         "date": "16 Jan 2025 12:13:29 AM",
         "body": "TxId: 37832903831. Your payment of 24,900 RWF to Robert Brown 23478 has been completed at 2025-01-16 00:13:22. Your new balance: 4,900 RWF. Fee was 0 RWF."
     },
-        {
+    {
         "id": 4,
         "sender": "Leon",
         "message": "Testing auth"
@@ -8463,5 +8463,10 @@
         "id": 4,
         "sender": "Mitchell",
         "message": "Second authentication test"
+    },
+    {
+        "id": "4",
+        "sender": "Leon2",
+        "message": "second test with post"
     }
 ]
