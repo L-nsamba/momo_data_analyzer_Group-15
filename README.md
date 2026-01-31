@@ -24,6 +24,12 @@ The system extracts data from XML SMS, categorizes transactions (e.g sent, recei
 **Link to EWD AI Log Documentation**: https://docs.google.com/document/d/1pGzeU6sfVQJjUu1Yf0Ksqrh-R3pc5Tpnkw56t4HX5KU/edit?usp=sharing
 <br>
 
+### 📜📑 SCRUM BOARD SETUP
+ 
+
+**Link to Scrum Board**: https://trello.com/b/5OkdDdek/momo-sms-analyser-scrum-board
+
+
 ### 🚀 GETTING STARTED FOR THE PROJECT
 
 1. Clone the repo: ``` git clone https://github.com/L-nsamba/momo_data_analyzer_Group-15.git ```
@@ -34,10 +40,10 @@ The system extracts data from XML SMS, categorizes transactions (e.g sent, recei
 
 The project structure is as follows;
 ```plaintext
-├──.idea/                
+├──.gitignore/           # Contains pycache, venv & .idea files    
 ├── analytics/           # Contains logic for analyzing processed data
 ├── api/                 # Handles communication between the backend and frontend
-├── data/                # Contains XML --> JSON
+├── data/                # Contains XML (raw data) --> JSON (processed data)
 ├── database/            # Database schemas, migrations and connection logic
 ├── docs/                # Project documentation (ERD diagrams, notes)
 ├── dsa/                 # Linear & Binary Search Logic
@@ -89,7 +95,7 @@ The project structure is as follows;
 <li> transactions.category_id --> transaction_categories.category_id </li>
 <li> user_category --> bridges users and transaction_categories </li>
 
-### 📝 Design Highlights
+### 🎯 Design Highlights
 <li> Use of foreign keys to enforce referential integrity. </li>
 <li> ENUMS for status tracking in system_logs. </li>
 <li> Composite primary key in user_category to prevent duplicate mappings. </li>
@@ -97,10 +103,44 @@ The project structure is as follows;
 <li> Normalization to avoid data duplication </li>
 <li>JSON Data Modelling</li>
 
-### 📜📑 SCRUM BOARD SETUP
- 
+### 📝 API DOCUMENTATION 
 
-**Link to Scrum Board**: https://trello.com/b/5OkdDdek/momo-sms-analyser-scrum-board
+| Endpoint | Method | Description |
+|----------- | --------| -------- |  
+| /transactions | GET | Lists all SMS transactions | 
+| /transactions/{id} | GET | View one SMS transaction | 
+| /transactions | POST | Add new transaction |
+| /transactions/{id} | PUT | Update an existing record |
+| /transactions/{id} | DELETE | Delete a record |
+
+### 🧪 Example Usage
+#### 🔑 Authenctication
+Use the predefined users with the corresponding passwords located in  ```auth.py```
+
+#### 1. Get all transactions
+``` curl -u leon:leon@password http://127.0.0.1:5000/transactions ```
+
+#### 2. Get one transaction
+``` curl -u mitchell:mitchell_password http://127.0.0.1:5000/transactions/7 ```
+
+#### 3. Add new transaction
+```
+curl -u queen:view1238 -X POST -H "Content-Type: application/json" \
+-d '{"id":21,"sender":"Alex","body":"Payment of 5000 RWF"}' \
+http://127.0.0.1:5000/transactions
+```
+
+#### 4. Update existing transaction
+```
+curl -u mufaro:mufaro@alu12 -X PUT -H "Content-Type: application/json" \
+-d '{"id":21,"sender":"Alex","body":"Updated payment of 12000 RWF"}' \
+http://127.0.0.1:5000/transactions/21
+```
+
+#### 5. Delete a transaction
+``` curl -u michael:mich123 -X DELETE http://127.0.0.1:5000/transactions/3 ```
+
+
 
 
 
