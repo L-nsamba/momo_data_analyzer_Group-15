@@ -2,12 +2,12 @@ import json
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from auth import require_auth
 
-with open("data/processed/sms_records.json") as f:
+with open("data/processed/transactions.json") as f:
     sms_records = json.load(f)
 
 class getall(BaseHTTPRequestHandler):
     def do_GET(self):
-        if self.path == "/sms_records":
+        if self.path.rstrip("/") == "/transactions":
             if not require_auth(self):
                 # Output incase of invalid authentication credentials
                 self.send_response(401)
@@ -33,5 +33,5 @@ class getall(BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
     server = HTTPServer(("127.0.0.1", 5000), getall)
-    print("Server running at http://127.0.0.1:5000/sms_records")
+    print("Server running at http://127.0.0.1:5000/transactions")
     server.serve_forever()

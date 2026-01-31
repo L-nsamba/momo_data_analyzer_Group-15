@@ -19,7 +19,7 @@ for sms in root.findall("sms"):
 json_data = json.dumps(sms_records, indent=4)
 
 #Creation of the json file to store the new data in json format
-with open("data/processed/sms_records.json", "w") as json_file:
+with open("data/processed/transactions", "w") as json_file:
     json_file.write(json_data)
 
 print("Successfully converted XML --> JSON!")

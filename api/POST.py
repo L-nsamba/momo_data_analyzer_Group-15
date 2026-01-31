@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 
 # Find the JSON file relative to this script
-DATA_FILE = os.path.join(os.path.dirname(__file__), '..', 'data', 'processed', 'sms_records.json')
+DATA_FILE = os.path.join(os.path.dirname(__file__), '..', 'data', 'processed', 'transactions.json')
 
 # Make sure the folder exists
 os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
@@ -24,7 +24,7 @@ def save_records(records):
     with open(DATA_FILE, 'w') as f:
         json.dump(records, f, indent=4)
 
-@app.route('/sms_records', methods=['POST'])
+@app.route('/transactions', methods=['POST'])
 @require_auth
 def add_transaction():
     # Get the data from the request
