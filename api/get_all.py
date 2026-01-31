@@ -1,20 +1,37 @@
 import json
-from flask import Flask, jsonify
+from http.server import BaseHTTPRequestHandler, HTTPServer
 from auth import require_auth
-
-app = Flask(__name__)
-
 
 with open("data/processed/sms_records.json") as f:
     sms_records = json.load(f)
 
-#Accessing the file path in which the json file is stored and executing GET
-@app.route('/sms_records', methods=['GET'])
-@require_auth
-def get_records():
-    return jsonify(sms_records)
+class getall(BaseHTTPRequestHandler):
+    def do_GET(self):
+        if self.path == "/sms_records":
+            if not require_auth(self):
+                # Output incase of invalid authentication credentials
+                self.send_response(401)
+                self.send_header("Content-type", "application/json")
+                self.end_headers()
+                response = {"error": "Unauthorized"}
+                self.wfile.write(json.dumps(response).encode())
+                return
+            
+            #  for valid user credentials
+            self.send_response(200)
+            self.send_header("Content-type", "application/json")
+            self.end_headers()
+            self.wfile.write(json.dumps(sms_records, indent=4).encode())
+        
+        else:
+            # Output for client side error
+            self.send_response(404)
+            self.send_header("Content-type", "application/json")
+            self.end_headers()
+            response = {"error": "Not Found"}
+            self.wfile.write(json.dumps(response).encode())
 
-print(f"Link to JSON: http://127.0.0.1:5000/sms_records ")
-
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    server = HTTPServer(("127.0.0.1", 5000), getall)
+    print("Server running at http://127.0.0.1:5000/sms_records")
+    server.serve_forever()
