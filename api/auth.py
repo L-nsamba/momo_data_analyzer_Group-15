@@ -1,5 +1,5 @@
-from flask import request, jsonify
-from functools import wraps
+import base64
+import json
 
 # Credentials for multiple users (group members)
 USERS = {
@@ -10,20 +10,25 @@ USERS = {
     "mufaro": "mufaro@$13"
 }
 
-def require_auth(f):
-    """Decorator to protect routes with basic authentication"""
-    @wraps(f)
-    def decorated_function(*args, **kwargs):
-        auth = request.authorization
-        
-        # Check if credentials were provided
-        if not auth:
-            return jsonify({"error": "Authentication required"}), 401
-        
-        # Check if username exists and password matches
-        if auth.username not in USERS or USERS[auth.username] != auth.password:
-            return jsonify({"error": "Invalid credentials"}), 401
-        
-        return f(*args, **kwargs)
+def require_auth(handler):
+    auth_header = handler.headers.get("Authorization")
+    if not auth_header:
+        return False
     
-    return decorated_function
+    try:
+        #Receiving headers from user credential input
+        auth_type, encoded = auth_header.split(" ", 1)
+        if auth_type.lower() != "basic":
+            return False
+        
+        #Decoding base64 password and username
+        decoded = base64.b64decode(encoded).decode("utf-8")
+        username, password = decoded.split(":", 1)
+
+        #Validating to see if the usernames correspond to passwords
+        if username in USERS and USERS[username] == password:
+            return True
+        return False
+    
+    except Exception: 
+        return False

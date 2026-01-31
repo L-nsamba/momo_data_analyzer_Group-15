@@ -38,5 +38,29 @@
         "Account_Number": 8769089087,
         "User_Type": "Customer",
         "Keywords": "5, DarrenGlover, 771435066, 8769089087, Customer"
+    },
+    {
+        "User-id": 6,
+        "Full_name": "MeekyEliasi",
+        "Phone_Number": 794463126,
+        "Account_Number": 736291082721,
+        "User_Type": "Merchant",
+        "Keywords":"6, MeekyEliasi, 794463126, 736291082721, Merchant"
+    },
+    {
+        "User-id": 7,
+        "Full_name": "AliceWonder",
+        "Phone_Number": 8953418790,
+        "Account_Number": 903271812,
+        "User_Type": "Customer",
+        "Keywords": "7, Alice Wonder, 8953418790, 903271812, Customer"
+    },
+    {
+        "User-id": 8,
+        "Full_name": "BenTendo",
+        "Phone_Number": 794417210,
+        "Account_Number": 931872026817,
+        "User_Type": "Merchant",
+        "Keywords": "8, BenTendo, 794417210, 931872026817, Merchant"
     }
 ]
