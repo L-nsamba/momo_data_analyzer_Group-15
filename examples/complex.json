@@ -5,15 +5,15 @@
         "sender": {
             "user_id": 1,
             "Full_name": "MitchellBarure",
-            "Phone_Number": 794467731,
-            "Account_Number": 9568899732,
+            "Phone_Number": "0794467731",
+            "Account_Number": "9568899732",
             "User_Type": "Customer"
         },
         "receiver": {
             "user_id": 4,
             "Full_name": "LeonNsamba",
             "Phone_Number": "0779495055",
-            "Account_Number": 12345678,
+            "Account_Number": "12345678",
             "User_Type": "Agent"
         },
         "category": {
@@ -27,7 +27,7 @@
             "raw_message": "<transaction><amount>200000</amount><user>1</user></transaction>",
             "processing_status": "SUCCESS",
             "created_at": "2026-01-23 17:39:16",
-            "processing_at": "2026-01-23 17:46:20"
+            "processed_at": "2026-01-23 17:46:20"
         }
     }
 ]
