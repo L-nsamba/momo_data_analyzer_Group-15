@@ -1,7 +1,7 @@
 import json
 import time
 
-DATA_PATH = "dsa/logs/sms_records.json"
+DATA_PATH = "data/processed/transactions.json"
 
 
 def load_transactions():
