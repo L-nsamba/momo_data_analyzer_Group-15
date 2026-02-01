@@ -55,7 +55,8 @@ class putTransaction(BaseHTTPRequestHandler):
 
         transaction_dict = {}
         for transaction in transactions:
-            transaction_dict[str(transaction["id"])] = transaction
+            if "id" in transaction:
+                transaction_dict[str(transaction["id"])] = transaction
 
         if transaction_id not in transaction_dict:
             self.send_response(401)
