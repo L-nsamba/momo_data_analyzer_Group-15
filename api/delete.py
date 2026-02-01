@@ -80,7 +80,7 @@ class DeleteHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(json.dumps({
             "message": "Transaction deleted successfully",
-            "deleted_id": transactions
+            "deleted_id": transaction_id
         }).encode())
 
 if __name__ == "__main__":
