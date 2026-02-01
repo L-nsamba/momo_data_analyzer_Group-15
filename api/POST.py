@@ -1,44 +1,61 @@
-# from flask import Flask, request, jsonify
-# from auth import require_auth
-# import json
-# import os
+import json
+import os
+from auth import require_auth
 
-# app = Flask(__name__)
+# Find the JSON file
+DATA_FILE = os.path.join(os.path.dirname(__file__), '..', 'data', 'processed', 'transactions.json')
+os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
 
-# # Find the JSON file relative to this script
-# DATA_FILE = os.path.join(os.path.dirname(__file__), '..', 'data', 'processed', 'transactions.json')
+def get_records():
+    """Read all records from file"""
+    if not os.path.exists(DATA_FILE):
+        return []
+    with open(DATA_FILE, 'r') as f:
+        return json.load(f)
 
-# # Make sure the folder exists
-# os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
+def save_records(records):
+    """Write all records to file"""
+    with open(DATA_FILE, 'w') as f:
+        json.dump(records, f, indent=4)
 
-# def get_records():
-#     """Read all records from file, or return empty list if file doesn't exist"""
-#     if not os.path.exists(DATA_FILE):
-#         return []
+def handle_post(handler):
+    """Handle POST requests for /transactions"""
+    # Check authentication
+    if not require_auth(handler):
+        print(" Authentication failed")
+        handler.send_response(401)
+        handler.send_header('Content-type', 'application/json')
+        handler.end_headers()
+        handler.wfile.write(json.dumps({"error": "Authentication required"}).encode())
+        return
     
-#     with open(DATA_FILE, 'r') as f:
-#         return json.load(f)
-
-# def save_records(records):
-#     """Write all records to file"""
-#     with open(DATA_FILE, 'w') as f:
-#         json.dump(records, f, indent=4)
-
-# @app.route('/transactions', methods=['POST'])
-# @require_auth
-# def add_transaction():
-#     # Get the data from the request
-#     new_record = request.get_json()
+    print(" Authentication successful")
     
-#     if not new_record:
-#         return jsonify({"error": "No data provided"}), 400
+    # Read the request body
+    content_length = int(handler.headers.get('Content-Length', 0))
+    body = handler.rfile.read(content_length)
     
-#     # Add to existing records and save
-#     records = get_records()
-#     records.append(new_record)
-#     save_records(records)
+    # Parse JSON
+    try:
+        new_record = json.loads(body.decode())
+        print(f" Received transaction: {new_record}")
+    except json.JSONDecodeError:
+        print(" Invalid JSON")
+        handler.send_response(400)
+        handler.send_header('Content-type', 'application/json')
+        handler.end_headers()
+        handler.wfile.write(json.dumps({"error": "Invalid JSON"}).encode())
+        return
     
-#     return jsonify({"message": "Transaction added!", "record": new_record}), 201
-
-# if __name__ == '__main__':
-#     app.run(debug=True, port=5000)
+    # Add to records
+    records = get_records()
+    records.append(new_record)
+    save_records(records)
+    print(f" Transaction saved! Total records: {len(records)}")
+    
+    # Send success response
+    handler.send_response(201)
+    handler.send_header('Content-type', 'application/json')
+    handler.end_headers()
+    response = {"message": "Transaction added!", "record": new_record}
+    handler.wfile.write(json.dumps(response).encode())
