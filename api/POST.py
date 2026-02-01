@@ -1,3 +1,4 @@
+from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 import os
 from auth import require_auth
@@ -59,3 +60,21 @@ def handle_post(handler):
     handler.end_headers()
     response = {"message": "Transaction added!", "record": new_record}
     handler.wfile.write(json.dumps(response).encode())
+
+class MyPostHandler(BaseHTTPRequestHandler):
+    def do_POST(self):
+        if self.path == "/transactions":
+            handle_post(self)
+        else:
+            self.send_response(404)
+            self.end_headers()
+
+# Setting the location and port to run the post request
+def run(port=5000):
+    server_address = ("", port)
+    httpd = HTTPServer(server_address, MyPostHandler)
+    print(f"Server running on port {port}...")
+    httpd.serve_forever()
+
+if __name__ == "__main__":
+    run()

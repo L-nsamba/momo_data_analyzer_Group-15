@@ -8558,5 +8558,15 @@
         "address": "M-Money",
         "date": "16 Jan 2029 12:13:29 AM",
         "body": "TxId: 37832903831. Your payment of 24,000,900 RWF to Robert Brown 23478 has been completed at 2029-01-16 00:13:22. Your new balance: 40,900,900 RWF. Fee was 0 RWF."
+    },
+    {
+        "id": 21,
+        "sender": "Alex",
+        "body": "Payment of 5000 RWF"
+    },
+    {
+        "id": 22,
+        "sender": "Sydney",
+        "body": "Payment of 175000 RWF"
     }
 ]

@@ -9,7 +9,7 @@ DATA_FILE = os.path.join("data", "processed", "transactions.json")
 def load_transactions ():
     """Read all the transactions from the JSON file and return as list"""
     if not os.path.exists(DATA_FILE):
-    return []
+        return []
 
     with open(DATA_FILE, 'r', encoding="utf-8") as file:
         return json.load(file)
@@ -80,7 +80,7 @@ class DeleteHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(json.dumps({
             "message": "Transaction deleted successfully",
-            "deleted_id": transaction
+            "deleted_id": transactions
         }).encode())
 
 if __name__ == "__main__":
