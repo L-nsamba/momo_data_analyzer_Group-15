@@ -7,6 +7,7 @@
 <img src="../screenshots/get_all_http.png" width=700/>
 <br>
 <li>Status Codes</li>
-i. 404 - No records exist or endpoint incorrect
-ii. 401 - Missing or invalid credentials
-iii. 200 - OK
+i. 404 - No records exist or endpoint incorrect <br>
+ii. 401 - Missing or invalid credentials <br>
+iii. 200 - OK <br>
+
