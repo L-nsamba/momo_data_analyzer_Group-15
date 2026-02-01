@@ -25,7 +25,7 @@ class DeleteHandler(BaseHTTPRequestHandler):
 
     def do_DELETE(self):
         #Check Authentification
-        if not require_auth(self.headers):
+        if not require_auth(self):
             self.send_response(401)
             self.send_header("Content-type", "application/json")
             self.end_headers()
