@@ -47,7 +47,7 @@ The project structure is as follows;
 ├── database/            # Database schemas, migrations and connection logic
 ├── docs/                # Project documentation (ERD diagrams, notes)
 ├── dsa/                 # Linear & Binary Search Logic
-├── etl/                 # Contains the ETL pipeline
+├── etl/                 # Contains XML Parsing & ETL Pipeline
 ├── examples/            # Sample JSON
 ├── scripts/             # Utility and helper scripts
 ├── tests/               # Contains automated tests
@@ -139,6 +139,7 @@ http://127.0.0.1:5000/transactions/21
 
 #### 5. Delete a transaction
 ``` curl -u michael:mich123 -X DELETE http://127.0.0.1:5000/transactions/3 ```
+
 
 
 
