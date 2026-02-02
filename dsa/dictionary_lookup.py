@@ -41,6 +41,7 @@ if __name__ == "__main__":
     transaction_dict = build_transaction_dict(transactions)
 
     print("Dictionary Lookup for 20 transactions")
+    print("")
 
     for transaction_id in range(1, 21):
         start_time = time.time()
