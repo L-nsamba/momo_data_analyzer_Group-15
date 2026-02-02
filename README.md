@@ -24,6 +24,14 @@ The system extracts data from XML SMS, categorizes transactions (e.g sent, recei
 **Link to EWD AI Log Documentation**: https://docs.google.com/document/d/1pGzeU6sfVQJjUu1Yf0Ksqrh-R3pc5Tpnkw56t4HX5KU/edit?usp=sharing
 <br>
 
+**Link to API Documentation**: https://docs.google.com/document/d/1NBzyp24I-KXzTw-A14WE1H1A2nsNiMktRnMwTza8ZWY/edit?usp=sharing
+<br>
+
+## TEAM SHEET
+
+**Link to Team Sheet**: https://docs.google.com/spreadsheets/d/1xkdF-nV46tAIEoJwmyZqKwqzJzLcpbUyEoBsTxy4rwo/edit?usp=sharing
+<br>
+
 ### 📜📑 SCRUM BOARD SETUP
  
 
@@ -139,6 +147,7 @@ http://127.0.0.1:5000/transactions/21
 
 #### 5. Delete a transaction
 ``` curl -u michael:mich123 -X DELETE http://127.0.0.1:5000/transactions/3 ```
+
 
 
 
